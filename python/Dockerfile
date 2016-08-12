@@ -6,4 +6,6 @@ RUN git clone https://github.com/grpc/grpc && \
 
 RUN pip install grpcio==1.0.0rc2
 
+EXPOSE 50051
+
 ENTRYPOINT ["python3.5", "/opt/helloworld/greeter_server.py"]
